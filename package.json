@@ -1,0 +1,26 @@
+{
+  "name": "webdriverio-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create-user-test": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/createuser.e2e.js",
+    "add-to-cart-test": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/addtocart.e2e.js",
+    "checkout-test": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/checkout.e2e.js",
+    "order-history-test": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/orderhistory.e2e.js",
+    "datadriven-test": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/dataDriven.e2e.js"
+  },
+  "author": "Allison Davis",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^7.26.0",
+    "webdriverio": "^7.26.0"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^7.26.0",
+    "@wdio/allure-reporter": "^7.26.0",
+    "@wdio/mocha-framework": "^7.26.0",
+    "@wdio/selenium-standalone-service": "^7.26.0",
+    "@wdio/spec-reporter": "^7.26.0"
+  }
+}
